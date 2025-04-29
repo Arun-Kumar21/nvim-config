@@ -16,12 +16,15 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
   require 'plugins.lualine',
-  { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
+  {"nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
+  --require 'plugins.treesitter',
+  { "neovim/nvim-lspconfig" },
   require 'plugins.telescope',
+
   require 'plugins.bufferline',
   require 'plugins.neotree',
   require 'plugins.colortheme',
---  require 'plugins.lsp',
+  require 'plugins.lsp',
   require 'plugins.autocompletion',
   require 'plugins.autopairs',
   require 'plugins.gitsigns',

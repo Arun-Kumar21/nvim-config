@@ -1,4 +1,3 @@
-
 return {
   -- Core LSP Config
   {
@@ -11,7 +10,7 @@ return {
       require("mason").setup() -- Setup Mason
       require("mason-lspconfig").setup({
         ensure_installed = {
-          "lua_ls", "pyright", "ts_ls", "gopls", "clangd", -- C++
+          "lua_ls", "pyright", "ts_ls", "gopls", "clangd", -- C++ support with clangd
         },
       })
 
@@ -43,3 +42,4 @@ return {
     dependencies = { "neovim/nvim-lspconfig" },
   },
 }
+
